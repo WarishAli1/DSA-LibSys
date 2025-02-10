@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #6c5ce7;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffeaa7;
+  transform: translateY(-2px);
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #6c5ce7 0%, #a55eea 100%);
+  color: white;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-container input {
+  padding: 15px 25px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid #dfe6e9;
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: white;
+}
+
+.search-container input:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 30px rgba(108, 92, 231, 0.2);
+  transform: scale(1.02);
+  width: 85%;
+}
+
+.table-container {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin: 0 auto;
+  width: 90%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #dfe6e9;
+}
+
+table th {
+  background-color: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+table th:hover {
+  background-color: #5849c2;
+}
+
+table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.action-btn:hover {
+  transform: scale(1.15);
+  background-color: #f8f9fa;
+}
+
+.action-btn i {
+  font-size: 18px;
+}
+
+.edit-btn {
+  color: #6c5ce7;
+}
+
+.edit-btn:hover {
+  color: #5849c2;
+  background-color: rgba(108, 92, 231, 0.1);
+}
+
+.delete-btn {
+  color: #e17055;
+}
+
+.delete-btn:hover {
+  color: #d63031;
+  background-color: rgba(225, 112, 85, 0.1);
+}
+
+.form-container {
+  background-color: white;
+  padding: 35px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  width: 90%;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2d3436;
+}
+
+.form-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-container form input,
+.form-container form textarea {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.form-container form input:focus,
+.form-container form textarea:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 10px rgba(108, 92, 231, 0.1);
+}
+
+.form-container form button {
+  grid-column: span 2;
+  padding: 15px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.form-container form button:hover {
+  background-color: #5849c2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.2);
+}
+
+footer {
+  background-color: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #a8e6cf;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffd3b6;
+}
+
+@media (max-width: 768px) {
+  .container { width: 95%; }
+  header h1 { font-size: 2.2rem; }
+  .form-container form { grid-template-columns: 1fr; }
+  .form-container form button { grid-column: 1; }
+  .action-btn { padding: 3px; }
+  .action-btn i { font-size: 16px; }
+}

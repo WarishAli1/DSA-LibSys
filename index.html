@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Library Management System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <header>
+    <div class="container">
+      <h1>Smart Library Management System</h1>
+      <p>Manage your library's collection effortlessly with real-time updates.</p>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search books by title, author, or ISBN..." />
+  </div>
+
+  <div class="table-container">
+    <table id="book-table">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Title</th>
+          <th onclick="sortTable(1)">Author</th>
+          <th onclick="sortTable(2)">ISBN</th>
+          <th onclick="sortTable(3)">Year</th>
+          <th onclick="sortTable(4)">Category</th>
+          <th onclick="sortTable(5)">Remarks</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <div class="form-container">
+    <h2 id="form-title">Add New Book Record</h2>
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <input type="text" id="isbn" placeholder="ISBN" required />
+      <input type="text" id="year" placeholder="Year" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <textarea id="remarks" placeholder="Remarks" required></textarea>
+      <button type="submit" id="submit-btn">Add Book</button>
+      <input type="hidden" id="book-id" />
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Smart Library Management System | <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

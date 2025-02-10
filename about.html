@@ -1,0 +1,91 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page {
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #6c5ce7;
+        }
+        
+        .feature-card h3 {
+            color: #2d3436;
+            margin-bottom: 10px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            margin: 10px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "•";
+            color: #6c5ce7;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="about-page">
+        <h1 style="color: #2d3436; margin-bottom: 30px; text-align: center;">About Our Library Management System</h1>
+        
+        <div class="feature-card">
+            <h3>Project Overview</h3>
+            <p>This Library Management System is a comprehensive solution designed to streamline library operations and enhance user experience. It provides an intuitive interface for managing book records efficiently.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Key Features</h3>
+            <ul class="feature-list">
+                <li>Create new book records with detailed information</li>
+                <li>Read and search through the entire book collection</li>
+                <li>Update existing book information seamlessly</li>
+                <li>Delete outdated or unnecessary records</li>
+                <li>Sort books by various parameters</li>
+                <li>Responsive design for all devices</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3>Technical Implementation</h3>
+            <p>Built using modern web technologies including HTML5, CSS3, and JavaScript. The system implements CRUD operations (Create, Read, Update, Delete) with a user-friendly interface and robust data management capabilities.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Smart Library Management System | <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
+    </footer>
+</body>
+</html>
