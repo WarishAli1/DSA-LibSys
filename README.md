@@ -5,10 +5,20 @@ The Library Management System is a web-based application designed to streamline 
 
 # Key Features
 ✅ Create new book records with detailed information
+
+
 ✅ Read & Search through the entire book collection
+
+
 ✅ Update existing book information seamlessly
+
+
 ✅ Delete outdated or unnecessary records
+
+
 ✅ Sort books by various parameters
+
+
 ✅ Responsive Design for compatibility across all devices
 
 # Technical Implementation
