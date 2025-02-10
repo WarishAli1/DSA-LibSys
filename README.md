@@ -25,6 +25,12 @@ The Library Management System is a web-based application designed to streamline 
 🔹 Built using modern web technologies:
 
 HTML5 – Structure and layout
+
+
 CSS3 – Styling and responsiveness
+
+
 JavaScript – Logic and interactivity
+
+
 🔹 Implements CRUD operations (Create, Read, Update, Delete) for efficient data management.
